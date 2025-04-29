@@ -1,0 +1,158 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: url('background-ecos.jpg') no-repeat center top;
+    background-size: contain;
+    background-color: #000; /* cor de fundo base para áreas fora da imagem */
+    background-attachment: fixed;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.65);
+    z-index: 0;
+}
+
+
+.container {
+    background-color: #1a1a1a;
+    padding: 40px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 700px;
+    box-shadow: 0 0 20px rgba(138, 43, 226, 0.5);
+    margin: 40px 0;
+    position: relative;
+    z-index: 1;
+}
+
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #555555;
+    border-radius: 8px;
+    background-color: #2a2a2a;
+    color: #ffffff;
+}
+
+
+h1, h2 {
+    text-align: center;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 16px;
+    color: #cccccc;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #dddddd;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #555555;
+    border-radius: 8px;
+    background-color: #2a2a2a;
+    color: #ffffff;
+    resize: vertical;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #888888;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #6c63ff;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #5a54d1;
+}
+
+#submit-button {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.mensagem {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.mensagem.sucesso {
+    background-color: #28a74533;
+    color: #28a745;
+    border: 1px solid #28a745;
+}
+
+.mensagem.erro {
+    background-color: #dc354533;
+    color: #dc3545;
+    border: 1px solid #dc3545;
+}
+
+.divider {
+    margin: 30px 0;
+    border: 1px solid #444444;
+}
+
+.conteudos-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.conteudo-card {
+    background-color: #2a2a2a;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #555555;
+    position: relative;
+}
+
+.conteudo-card h3 {
+    margin-top: 0;
+    color: #6c63ff;
+}
+
+.botoes {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.botoes button {
+    flex: 1;
+}
+
+input.editavel, textarea.editavel {
+    margin-top: 8px;
+}
